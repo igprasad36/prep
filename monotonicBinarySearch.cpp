@@ -1,9 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*This is a program to find first integer (greater than 0) for which
+the result of a monotonically increasing function is +ve.
+
+Time Complexity  : O(log n)
+	(where n is the first integer for which the output is +ve)
+*/
+
 int f(int x){
 	return x*x - 10*x - 20;
 }
+
 
 int findHigh(){
 	int i = 1;
